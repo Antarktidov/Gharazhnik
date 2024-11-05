@@ -1,0 +1,28 @@
+.main-content.service {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5vw;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+.service-img {
+    border-radius: 12px;
+}
+.service-text {
+    width: 565px;
+    font-size: 20px;
+}
+@media screen and (max-width: 1167px) {
+    .main-content.service {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service-text {
+        width: 80vw;
+        font-size: 14px;
+    }
+}

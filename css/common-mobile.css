@@ -1,0 +1,46 @@
+@media screen and (max-width: 1094px) {
+    .footer-column {
+    --column-width: 100px;
+    --margin-left-left-column: 15px;
+    width: var(--column-width);
+    & .footer-item {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+    }
+}
+
+.nav {
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.company-name {
+    background-color: var(--menu-and-footer-background);
+    color: var(--menu-and-footer-text-color);
+    text-align: center;
+    padding-top: 22px;
+    border-radius: 12px;
+}
+
+.nam-item {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.sun-nav-top {
+    display: flex;
+    margin-top: 22px;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}

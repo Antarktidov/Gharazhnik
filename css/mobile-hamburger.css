@@ -1,0 +1,45 @@
+.burger-menu span {
+    height: 3px;
+    background-color: var(--menu-and-footer-text-color);
+    margin: 5px;
+    width: 25px;
+    border-radius: 2px;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background-color: var(--menu-and-footer-background);
+    border-top: 1px solid var(--menu-and-footer-text-color);
+}
+.mobile-nav.active {
+    display: flex;
+    flex-direction: column;
+}
+.mobile-nav a {
+    padding: 15px;
+    border-bottom: 1px solid var(--menu-and-footer-text-color);
+    color: var(--menu-and-footer-text-color);
+}
+
+@media (max-width: 768px) {
+    .sun-nav-top {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .nav {
+        height: 68px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: var(--menu-and-footer-background)
+        }
+    }

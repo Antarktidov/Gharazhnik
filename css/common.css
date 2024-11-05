@@ -1,0 +1,64 @@
+:root {
+    --body-background-color: #DDF8D7;
+    --body-text-color: #000;
+
+    --menu-and-footer-background: #364034;
+    --menu-and-footer-text-color: #fff;
+
+    --assent-background-color: #00B6FF;
+    --assent-text-color: #000;
+}
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+}
+.company-name {
+    font-size: 24px;
+    height: 100%;
+    width: 284px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 24px;
+    max-width: 90vw;
+}
+.footer {
+    background-color: var(--menu-and-footer-background);
+    color: var(--menu-and-footer-text-color);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-column {
+    --column-width: 300px;
+    --margin-left-left-column: 100px;
+    width: var(--column-width);
+    & .footer-item {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    &.footer-left-column {
+        margin-left: var(--margin-left-left-column);
+    }
+    &.footer-right-column {
+        margin-left: var(--column-width);
+    }
+}
+.footer-item-link {
+    text-decoration: underline !important; 
+}
+.footer-item .pnone-number {
+    color: #ABA1A1;
+    white-space: nowrap;
+}
+.footer.fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }

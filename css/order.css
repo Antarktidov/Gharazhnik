@@ -1,0 +1,102 @@
+.order-form {
+    --margin-left: 10vw;
+}
+.form-columns {
+    display: grid;
+    grid-template-columns: 486px 486px;
+}
+.form-block {
+    display: flex;
+    flex-direction: column;
+    & label {
+        font-size: 24px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+    & input {
+        font-size:20px;
+        
+        background-color: #D9D9D9;
+        
+        max-width: 80vw;
+        width: 486px;
+        height: 44px;
+        
+        border-radius: 12px;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+}
+.form-column-left {
+    margin-left: var(--margin-left);
+}
+.form-column-right {
+    margin-left: calc( var(--margin-left) * 2);
+}
+.order-form-card {
+    display: flex;
+    margin-left: var(--margin-left);
+    margin-top: 50px;
+}
+.order-form-card-text-title {
+    font-size: 24px;
+}
+.order-form-card-text-value {
+    font-size: 20px;
+}
+.order-form-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 188px;
+    margin-right: 100px;
+}
+.order-form-card-img {
+    border-radius: 12px;
+}
+.order-form-btn {
+    margin-left: var(--margin-left);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    background-color: var(--assent-background-color);
+    color: var(--assent-text-color);
+    
+    font-size: 20px;
+    
+    width: 200px;
+    height: 44px;
+    
+    border-radius: 12px;
+    
+    
+}
+@media screen and (max-width: 1310px) {
+    .form-columns {
+        grid-template-columns: 1fr;
+    }
+    .form-column-right {
+        margin-left: var(--margin-left);
+    }
+    .form-block {
+        & label {
+            font-size: 14px;
+        }
+        & input {
+            font-size:14px;
+        }
+    }
+    .order-form-card-text-title {
+        font-size: 14px;
+    }
+    .order-form-card-text-value {
+        font-size: 14px;
+    }
+    .order-form-card-text {
+        margin-right: 50px;
+    }
+    .order-form-btn {   
+        font-size: 14px; 
+    }
+}

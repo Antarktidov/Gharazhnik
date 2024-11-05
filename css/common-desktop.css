@@ -1,0 +1,32 @@
+.nav {
+    height: 68px;
+
+    display: flex;
+    flex-direction: row; 
+
+    margin-left: 20px;
+    margin-top: 20px;
+
+    & .company-name {
+        background-color: var(--menu-and-footer-background);
+        color: var(--menu-and-footer-text-color);
+        
+        text-align: center;
+        padding-top: 22px;
+        border-radius: 12px;
+    }
+
+    & .nam-item {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    
+    & .sun-nav-top {
+       margin-top: 22px;
+    }
+}
+
+.page-title {
+    margin-top: 72px;
+    margin-bottom: 72px;
+}

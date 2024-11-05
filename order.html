@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГаРаЖнИк</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common-desktop.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/common-mobile.css">
+    <link rel="stylesheet" href="css/mobile-hamburger.css">
+    <script src="js/hamburger.js" defer></script>
+    <link rel="stylesheet" href="css/mobile-footer-nav.css">
+    <script src="js/footer.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="company-name"><a href="index.html" class="main-page-link">ГаРаЖнИк</a></div>
+        <nav class="sun-nav-top">
+            <span class="nam-item">
+                <a href="index.html" class="nav-link">Каталог</a>
+            </span>
+            <span class="nam-item">
+                <a href="service-page.html" class="nav-link">Услуги</a>
+            </span>
+            <span class="nam-item">
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </span>
+        </nav>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <a href="index.html" class="nav-link">Каталог</a>
+        <a href="service-page.html" class="nav-link">Услуги</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+    </div>
+    
+    
+    <h1 class="page-title">
+        Форма заказа
+    </h1>
+    <form action="#" class="order-form">
+        <div class="form-columns">
+            <div class="form-column form-column-left">
+                <div class="form-block">
+                    <label for="name">Имя*:</label>
+                    <input name="name" type="text" id="name" placeholder="Иван" required>
+                </div>
+
+                <div class="form-block">
+                    <label for="familyName">Фамилия*:</label>
+                    <input name="familyName" type="text" id="familyName" placeholder="Иванов" required>
+                </div>
+            </div>
+
+            <div class="form-column form-column-right">
+                <div class="form-block">
+                    <label for="patronymic">Отчество</label>
+                    <input name="patronymic" type="text" id="patronymic" placeholder="Иванович">
+                </div>
+
+                <div class="form-block">
+                    <label for="phoneNumber">Номер телефона*:</label>
+                    <input name="phoneNumber" type="tel" id="phoneNumber" placeholder="+0 000 000 00 00" required>
+                </div>
+            </div>
+        </div>
+        <div class="order-form-card">
+            <div class="order-form-card-text">
+                <div class="order-form-card-text-group">
+                    <div class="order-form-card-text-title">Ваш заказ:</div>
+                    <div class="order-form-card-text-value">Мотор класса A</div>
+                </div>
+
+                <div class="order-form-card-text-group">
+                    <div class="order-form-card-text-title">Цена:</div>
+                    <div class="order-form-card-text-value">120 руб.</div>
+                </div>
+            </div>
+            <img src="images/catalog/MotorA.png"
+            height="188"
+            width="150"
+            class="order-form-card-img">
+        </div>
+
+        <button class="order-form-btn">Оформить заказ</button>
+    </form>
+    <footer class="footer">
+        <div class="footer-column footer-left-column">
+            <div class="footer-item">Телефон: <span class="pnone-number">+0 000 000 00 00</span></div>
+            <div class="footer-item"><a href="tos.html" class="footer-item-link">Условия обслуживания</a></div>
+            <div class="footer-item">(c) ГаРаЖнИк</div>
+        </div>
+        <div class="footer-column footer-right-column">
+            <div class="footer-item"><a href="tou.html" class="footer-item-link">Условия использования сайта</a></div>
+            <div class="footer-item"><a href="privacy-policy.html" class="footer-item-link">Политика конфиденциальности сайта</a></div>
+        </div>
+    </footer>
+    <div class="mobile-footer-nav">
+        <a href="index.html" class="mobile-footer-nav-link">
+            <img src="images/icons/Home.svg"
+            class="mobile-footer-nav-link-icon">
+        </a>
+        <a href="service-page.html" class="mobile-footer-nav-link">
+            <img src="images/icons/Tool.svg"
+            class="mobile-footer-nav-link-icon">
+        </a>
+        <a href="contact.html" class="mobile-footer-nav-link">
+            <img src="images/icons/Info.svg"
+            class="mobile-footer-nav-link-icon">
+        </a>
+    </div>
+</body>
+</html>

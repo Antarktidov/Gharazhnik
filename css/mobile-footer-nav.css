@@ -1,0 +1,20 @@
+.mobile-footer-nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--body-background-color);
+
+    /*
+    Параметр ниже деактивриует стиль и само меню. Так и задумано!
+    */
+    display: none;
+}
+@media (min-width: 769px) {
+    .mobile-footer-nav {
+        display: none;
+    }
+}
